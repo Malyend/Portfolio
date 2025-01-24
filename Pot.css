@@ -1,0 +1,172 @@
+/*misc*/
+/*
+orbitron
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+montserrat
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.montserrat-Techno {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.orbitron-Techno {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}
+/*misc*/
+
+body {
+    background-color: rgb(46, 46, 45);
+}
+/*Navigation Section*/
+.Navigation-container {
+  background-color: rgba(73, 42, 80, 0.866);
+  width: 100%; 
+  padding: 5px auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.Navigation nav, ul {
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    height: 0;
+}
+
+.Navigation nav, li {
+    margin: 0;
+}
+
+.Navigation nav, a {
+    font-family:"Orbitron", serif ;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+
+    text-decoration: none;
+    color: black;
+}
+.Navigation a:hover {
+    color: blueviolet;
+}
+/*Heading Section*/
+#header {
+    font-family: "Montserrat", serif;
+    margin-top: 2rem;
+    border: 2px solid black;
+
+    width: 100%;
+    max-width: 940px;
+
+    height: 281px;
+    background-image: url(/Images/earth-2254769_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+#header::before{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.774);
+    z-index: 1;
+}
+.header-container {
+    
+    color: rgb(177, 3, 3);
+
+    position: relative;
+    z-index: 2;
+}
+
+#header h1{
+    font-family: "Orbitron", serif;
+    text-align: center;
+    
+}
+#header p {
+    text-align: center;
+}
+
+.header-button, button {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Orbitron", serif;
+    
+    z-index: 2;
+}
+.header-button button {
+    font-family: "Orbitron", serif;
+    
+    background-color: rgb(177, 3, 3);;
+    color: #210f17;
+    cursor: pointer;
+}
+
+/*The Footer Section*/
+
+/*FootNav*/
+.footer-Nav-container {
+    background-color: rgb(73, 42, 80);
+    padding: 5px;
+    width: 100%;
+
+    position: relative;
+    right: 0.7rem;
+    bottom: 0;
+    
+    z-index: 2;
+}
+
+.footer-Nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    list-style: none;
+    height: 0;
+}
+
+.footer-Nav li {
+    margin: 0;
+}
+
+.footer-Nav a {
+    font-family:"Orbitron", serif ;
+    font-size: 0.7rem;
+
+    color: #000;
+    padding: 5px;    
+    text-decoration: none;
+}
+
+.footer-Nav a:hover {
+    color: blueviolet;
+}
+
+.footer-content p {
+    font-size: 0.8rem;
+    text-align: center;
+}

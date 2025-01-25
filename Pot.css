@@ -25,6 +25,7 @@ montserrat
 
 body {
     background-color: rgb(46, 46, 45);
+    display: flexbox;
 }
 /*Navigation Section*/
 .Navigation-container {
@@ -70,9 +71,13 @@ body {
     border: 2px solid black;
 
     width: 100%;
-    max-width: 940px;
+    
 
-    height: 281px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height:80vh;
     background-image: url(/Images/earth-2254769_1920.jpg);
     background-size: cover;
     background-position: center center;
@@ -108,20 +113,22 @@ body {
 }
 
 .header-button, button {
-    display: flex;
     justify-content: center;
+
+    display: flex;
+    
 
     font-family: "Orbitron", serif;
     
     z-index: 2;
-}
-.header-button button {
+
     font-family: "Orbitron", serif;
     
     background-color: rgb(177, 3, 3);;
     color: #210f17;
     cursor: pointer;
 }
+
 
 /*The Footer Section*/
 
@@ -132,7 +139,7 @@ body {
     width: 100%;
 
     position: relative;
-    right: 0.7rem;
+    right: 0.3rem;
     bottom: 0;
     
     z-index: 2;
@@ -169,4 +176,10 @@ body {
 .footer-content p {
     font-size: 0.8rem;
     text-align: center;
+    position: fixed;
+
+    bottom: 0;
+}
+
+@media (max-width: 600px) { 
 }

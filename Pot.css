@@ -41,7 +41,9 @@ body {
 .Navigation nav, ul {
 
     display: flex;
-    
+    position: relative;
+    right: 1rem;
+
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -148,14 +150,20 @@ body {
     position: relative;
     right: 0.3rem;
     bottom: 0;
+    text-align: center;
     
     z-index: 2;
+
+    font-family: "Orbitron", serif;
 }
 
 .footer-Nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    right: 2.5rem;
 
     width: 100%;
 

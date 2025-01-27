@@ -250,6 +250,11 @@ body {
     bottom: 0;
 }
 
+.Footer-social {
+    background-color: #7a0b89;
+    
+}
+
 @media (max-width: 600px) { 
     #P1 {
         font-size: 0.9rem;

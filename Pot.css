@@ -145,6 +145,7 @@ body {
     font-family:"Montserrat", serif ;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .About-Section h1 {
@@ -185,6 +186,9 @@ body {
     border-collapse: collapse;
     
     background-color: #bd60e5;
+
+    width: 100%;
+    height: fit-content;
     
 }
 
@@ -195,6 +199,7 @@ body {
     background-color: rgb(73, 42, 80);
     padding: 5px;
     width: 100%;
+    height: fit-content;
 
     position: relative;
     right: 0.3rem;
@@ -246,4 +251,34 @@ body {
 }
 
 @media (max-width: 600px) { 
+    #P1 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    #About-h {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #About-h img {
+        align-self: center;
+    }
+    .About-Section {
+        font-size: 0.8rem;
+    }
+    
+}
+@media (max-width: 420px) {
+    #P1 {
+        font-size: 0.8rem;
+    }
+    #About-h {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #About-h img {
+        align-self: center;
+    }
+    .About-Section {
+        font-size: 0.8rem;
+    }
 }

@@ -24,8 +24,7 @@ montserrat
 /*misc*/
 
 body {
-    background-color: rgb(46, 46, 45);
-    display: flexbox;
+    background-color: rgb(29, 29, 25);
 }
 /*Navigation Section*/
 .Navigation-container {
@@ -138,6 +137,56 @@ body {
     border-style: groove;
 }
 
+/*The About Section*/
+#About-Container {
+    margin-top: 2rem;
+}
+.About-Section {
+    font-family:"Montserrat", serif ;
+    display: flex;
+    flex-direction: column;
+}
+
+.About-Section h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #7a0b89;
+}
+
+#About-h {
+    display: flex;
+    flex-direction: row;
+    
+}
+#P1 {
+    font-family:"Montserrat", serif ;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #bd33e4;
+}
+#About-h img {
+    height: fit-content;
+    width: 25rem;
+
+    position: relative;
+    
+}
+/*About Table*/
+.About-Section p {
+    font-size: 1rem;
+}
+
+#Table-con table,tr,th,td {
+    text-align: center;
+    border: 2px solid rgb(164, 8, 8);
+    border-collapse: collapse;
+    
+    background-color: #bd60e5;
+    
+}
 
 /*The Footer Section*/
 

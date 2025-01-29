@@ -24,8 +24,7 @@ montserrat
 /*misc*/
 
 body {
-    background-color: rgb(46, 46, 45);
-    display: flexbox;
+    background-color: rgb(29, 29, 25);
 }
 /*Navigation Section*/
 .Navigation-container {
@@ -41,7 +40,9 @@ body {
 .Navigation nav, ul {
 
     display: flex;
-    
+    position: relative;
+    right: 1rem;
+
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -122,7 +123,7 @@ body {
     
     z-index: 2;
 
-    font-family: "Orbitron", serif;
+    
     
     background-color: transparent;
     padding: 1rem;
@@ -136,6 +137,139 @@ body {
     border-style: groove;
 }
 
+/*The About Section*/
+#About-Container {
+    margin-top: 2rem;
+}
+.About-Section {
+    font-family:"Montserrat", serif ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.About-Section h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #7a0b89;
+}
+
+#About-h {
+    display: flex;
+    flex-direction: row;
+    
+}
+#P1 {
+    font-family:"Montserrat", serif ;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #bd33e4;
+}
+#About-h img {
+    height: fit-content;
+    width: 25rem;
+
+    position: relative;
+    
+}
+/*About Table*/
+.About-Section p {
+    font-size: 1rem;
+}
+
+#Table-con table,tr,th,td {
+    text-align: center;
+    border: 2px solid rgb(164, 8, 8);
+    border-collapse: collapse;
+    
+    background-color: #bd60e5;
+
+    width: 100%;
+    height: fit-content;
+    
+}
+/*The Projects section*/
+.project-container {
+    margin-top: 2rem ;
+    display: flex;
+}
+
+.project-section {
+    font-size: 1.3rem;
+    font-family:"Montserrat", serif ;
+    
+}
+.project-section h1, h2 {
+    text-align: center;
+}
+
+
+/*The Contact Section*/
+.contact-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    
+    
+    width: 100%;
+    height: fit-content;
+
+    background-image: url(/Images/earth-2254769_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 66rem;
+    border: 2px solid black;
+
+    padding: 1.2rem;
+    margin: 3rem;
+
+    font-size: 1rem;
+    font-family:"Montserrat", serif ;
+    background-color: #6e0f7dd6;
+}
+.contact-information {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #900b9346;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    
+}
+
+#Text-Box {
+    font-family:"Montserrat", serif ;
+    padding: 1rem;
+}
+
+#submit {
+    padding: 0.8rem;
+    margin: 0.5rem;
+
+    background-color: transparent;
+    color: #e5d560;
+
+    font-family:"Orbitron", serif ;
+}
+
+#submit:hover {
+    text-decoration:underline;
+    background-color: #890b3d;
+}
 
 /*The Footer Section*/
 
@@ -144,18 +278,25 @@ body {
     background-color: rgb(73, 42, 80);
     padding: 5px;
     width: 100%;
+    height: fit-content;
 
     position: relative;
     right: 0.3rem;
     bottom: 0;
+    text-align: center;
     
     z-index: 2;
+    font-size: 0.9rem;
+    font-family: "Orbitron", serif;
 }
 
 .footer-Nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    right: 2.5rem;
 
     width: 100%;
 
@@ -188,5 +329,40 @@ body {
     bottom: 0;
 }
 
+.Footer-social {
+    background-color: #7a0b89;
+    
+}
+
 @media (max-width: 600px) { 
+    #P1 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    #About-h {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #About-h img {
+        align-self: center;
+    }
+    .About-Section {
+        font-size: 0.8rem;
+    }
+    
+}
+@media (max-width: 420px) {
+    #P1 {
+        font-size: 0.8rem;
+    }
+    #About-h {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #About-h img {
+        align-self: center;
+    }
+    .About-Section {
+        font-size: 0.8rem;
+    }
 }

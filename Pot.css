@@ -123,7 +123,7 @@ body {
     
     z-index: 2;
 
-    font-family: "Orbitron", serif;
+    
     
     background-color: transparent;
     padding: 1rem;
@@ -192,7 +192,19 @@ body {
     
 }
 /*The Projects section*/
+.project-container {
+    margin-top: 2rem ;
+    display: flex;
+}
 
+.project-section {
+    font-size: 1.3rem;
+    font-family:"Montserrat", serif ;
+    
+}
+.project-section h1, h2 {
+    text-align: center;
+}
 
 
 /*The Contact Section*/
@@ -202,10 +214,61 @@ body {
     justify-content: center;
     align-content: center;
 
-    background-color: #bd33e4;
+    
+    
     width: 100%;
     height: fit-content;
+
+    background-image: url(/Images/earth-2254769_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
+}
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 66rem;
+    border: 2px solid black;
+
+    padding: 1.2rem;
+    margin: 3rem;
+
+    font-size: 1rem;
+    font-family:"Montserrat", serif ;
+    background-color: #6e0f7dd6;
+}
+.contact-information {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #900b9346;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    
+}
+
+#Text-Box {
+    font-family:"Montserrat", serif ;
+    padding: 1rem;
+}
+
+#submit {
+    padding: 0.8rem;
+    margin: 0.5rem;
+
+    background-color: transparent;
+    color: #e5d560;
+
+    font-family:"Orbitron", serif ;
+}
+
+#submit:hover {
+    text-decoration:underline;
+    background-color: #890b3d;
 }
 
 /*The Footer Section*/

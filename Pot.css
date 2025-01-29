@@ -191,6 +191,22 @@ body {
     height: fit-content;
     
 }
+/*The Projects section*/
+
+
+
+/*The Contact Section*/
+.contact-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #bd33e4;
+    width: 100%;
+    height: fit-content;
+    
+}
 
 /*The Footer Section*/
 

@@ -26,6 +26,12 @@ montserrat
 body {
     background-color: rgb(29, 29, 25);
 }
+
+
+
+
+
+
 /*Navigation Section*/
 .Navigation-container {
   background-color: rgba(73, 42, 80, 0.866);
@@ -55,9 +61,9 @@ body {
 }
 
 .Navigation nav, a {
-    font-family:"Orbitron", serif ;
+    font-family:"Orbitron", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 
     text-decoration: none;
     color: black;
@@ -65,6 +71,17 @@ body {
 .Navigation a:hover {
     color: blueviolet;
 }
+
+
+
+
+
+
+
+
+
+
+
 /*Heading Section*/
 #header {
     font-family: "Montserrat", serif;
@@ -103,16 +120,45 @@ body {
     position: relative;
     z-index: 2;
 }
+@keyframes Color {
 
-#header h1{
+    50% {
+        color: #830dd8;
+    }
+
+    75% {
+        color: #bd33e4;
+    }
+
+   
+}
+.Chng-color {
     font-size: 3.5rem;
     font-family: "Orbitron", serif;
     text-align: center;
-    
+
+    animation: Color 2s ease-in 1s infinite;
 }
-#header p {
-    font-size: 2rem;
+
+@keyframes Appear {
+    0% { 
+        opacity: 0;
+        transform: scale(1) rotate(360deg);
+    }
+
+    50% { 
+        opacity: 0.5;
+    }
+
+    100% { opacity: 1;}
+}
+.Appear {
+    font-size: 1.6rem;
     text-align: center;
+    animation-name: Appear;
+
+    animation-iteration-count: 1;
+    animation-duration: 2s;
 }
 
 .header-button, button {
@@ -131,11 +177,24 @@ body {
     border-style: hidden;
     color: #830dd8;
     cursor: pointer;
+    transition: 2s;
 }
 
-.header-button, button:hover {
+ button:hover {
+    padding: 1.7rem;
     border-style: groove;
+    transition: 1s;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*The About Section*/
 #About-Container {
@@ -191,6 +250,16 @@ body {
     height: fit-content;
     
 }
+
+
+
+
+
+
+
+
+
+
 /*The Projects section*/
 .project-container {
     margin-top: 2rem ;
@@ -200,11 +269,33 @@ body {
 .project-section {
     font-size: 1.3rem;
     font-family:"Montserrat", serif ;
+    color: #7a0b89;
     
 }
 .project-section h1, h2 {
     text-align: center;
+    
 }
+.Google-maps {
+    color: #bd60e5;
+}
+.Google-maps iframe {
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*The Contact Section*/
@@ -227,49 +318,87 @@ body {
 .contact-form {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     width: 66rem;
-    border: 2px solid black;
+    border-radius: 30px;
 
-    padding: 1.2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 1.5rem;
     margin: 3rem;
 
     font-size: 1rem;
-    font-family:"Montserrat", serif ;
-    background-color: #6e0f7dd6;
+    font-family:"Montserrat", serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: #c93edfda;
+}
+
+.contact-form form {
+    display: inline-flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 2rem;
+}
+.contact-form label {
+    font-size: 0.9rem;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f5f5f57e;
+    text-align: center;
+}
+
+.formRow form{
+    display: flex;
+    flex-direction: column;
+}
+.formRow {
+    display: flex;
+    flex-direction: row;
 }
 .contact-information {
     display: flex;
-    justify-content: start;
     align-items: center;
     flex-direction: column;
 
-    background-color: #900b9346;
+    background-color: #8605885c;
     padding: 1rem;
     border: none;
     border-radius: 1rem;
-    
+
+    text-align: center;
 }
 
 #Text-Box {
-    font-family:"Montserrat", serif ;
-    padding: 1rem;
+    font-family:"Montserrat", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    padding: 2.5rem;
 }
 
 #submit {
-    padding: 0.8rem;
+    padding: 1rem;
     margin: 0.5rem;
 
     background-color: transparent;
     color: #e5d560;
 
-    font-family:"Orbitron", serif ;
+    font-family:"Orbitron", serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 #submit:hover {
-    text-decoration:underline;
+    text-decoration: wavy; 
     background-color: #890b3d;
+
+    cursor: pointer;
+    transition: 2s;
 }
+
+
+
+
+
+
+
+
 
 /*The Footer Section*/
 
@@ -310,7 +439,7 @@ body {
 
 .footer-Nav a {
     font-family:"Orbitron", serif ;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
 
     color: #000;
     padding: 5px;    
@@ -333,6 +462,15 @@ body {
     background-color: #7a0b89;
     
 }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) { 
     #P1 {

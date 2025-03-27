@@ -1,0 +1,161 @@
+body {
+    background-color:whitesmoke ;
+   
+}
+
+.Grid-cont {
+    display: grid;
+    
+    grid-template-areas: 
+    "Nav Nav Nav Nav"
+    "Head Head Head Head "
+    "Section Section Section sidebar"
+    "Section Section Section sidebar"
+    "footer footer footer sidebar";
+
+    
+}
+/*Navigation*/
+.Navigation {
+    display: grid;
+    grid-area: Nav;
+    border: 2px solid gold;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.Navigation ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+.Navigation li {
+    margin: 0;
+    list-style: none;
+}
+
+.Navigation a {
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Navigation a:link {
+    color: black;
+}
+.Navigation a:visited {
+    color: blueviolet;
+}
+.Navigation a:hover {
+    transition: 0.5s;
+    color: red;
+}
+
+
+
+
+
+
+
+/*header content*/
+.Header {
+    display: grid;
+    grid-area: Head;
+    border: 2px solid green;
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.4rem;
+}
+.Header h1 {
+    font-size: 2rem;
+    font-weight: 450px;
+
+    text-decoration: overline;
+}
+.Header p {
+    font-size: 1.3rem;
+}
+.Header strong:hover {
+    color: darkred;
+    transition: 2s;
+
+    background-color: rgba(21, 17, 25, 0.97);
+    border-radius: 0.5rem;
+    padding: 1.3em;
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*Section content*/
+.Section {
+    display: grid;
+    grid-area: Section;
+    border: 2px solid red;
+}
+
+.Gallery_media {
+    display: grid;
+    grid-template-areas: 
+    "Duck Dog"
+    "Rabbit Dog"
+    "Parakeet Deer"
+    "Koala Koala";
+}
+
+.Duck {
+    display: -ms-inline-grid;
+    grid-area: Duck;
+}
+
+.Rabbit {
+    display: -ms-inline-grid;
+    grid-area: Rabbit;
+}
+
+.Dog {
+    display: -ms-inline-grid;
+    grid-area: Dog;
+}
+
+.Parakeet {
+    display: -ms-inline-grid;
+    grid-area: Parakeet;
+}
+
+.Deer {
+    display: -ms-inline-grid;
+    grid-area: Deer;
+}
+
+.Koala {
+    display: -ms-inline-grid;
+    grid-area: Koala;
+}
+
+/*Sidebar*/
+.sidebar {
+    grid-area: sidebar;
+    border: 2px solid yellow;
+}
+/*footer*/
+.footer {
+    display: grid;
+    grid-area: footer;
+    border: 2px solid black;
+}

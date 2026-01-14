@@ -1,5 +1,5 @@
 /*Basic*/
-* {
+body {
     background-color: black;
     color: whitesmoke;
 }
@@ -130,10 +130,8 @@ button{
     display: flex;
     flex-direction: column;
 
-    color: rgb(0, 0, 0);
-    
-
 }
+
 .foot_form input {
     background-color: whitesmoke;
 }

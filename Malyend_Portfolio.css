@@ -116,3 +116,74 @@ button{
     top: 0;
     
 }
+
+/*the footer section*/
+
+.foot-section {
+    display: flex;
+
+    flex-direction: column;
+    background-color: black;
+}
+
+.foot_form form, input {
+    display: flex;
+    flex-direction: column;
+
+    color: rgb(0, 0, 0);
+    
+
+}
+.foot_form input {
+    background-color: whitesmoke;
+}
+
+.foot_form form, input, label {
+    height: auto;
+}
+
+#Submit {
+    padding: 1rem;
+
+    justify-self: center;
+    align-self: center;
+
+    width: 50%;
+    background-color: whitesmoke;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#Submit:hover {
+    cursor: pointer;
+
+    transform: scale(0.9);
+    transition: 1.2s;
+}
+
+.foot_email {
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    justify-self: center;
+
+    text-align: center;
+}
+.foot_email a:link {
+    color: aliceblue;
+}
+
+.foot_email a:visited {
+    color: darkred;
+}
+
+.foot_email a:hover {
+    color: blueviolet;
+}
+
+.foot_email a:active {
+    color: cadetblue;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Roberto">
+    <meta name="Description" content="my first attempt at using javascript, html and css to create a calculator application">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/Images/pixil-frame-0 (1).png" type="x-icon/image">
+
+    <link rel="stylesheet" href="/Projects/Calculator.css" type="text/css">
+
+    <title>The Calculator</title>
+</head>
+<body>
+    <!--
+        Creating a calculator. What does it contain:
+        A way to input numbers
+        A way to choose wether to add, multiply, divide or subtract
+        A way to see the results.-->
+
+        <div id="input_numbers">
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        </div>
+
+        <div class="buttons">
+            <button id="add" onclick= "changeOperation('+')">+</button>
+            <button id="substract" onclick="changeOperation('-')">-</button>
+            <button id="multiply" onclick="changeOperation('*')">x</button>
+            <button id="divide" onclick="changeOperation('/')">&divide</button>
+        </div>
+        
+
+        <div class="results">
+
+            <button onclick="calculate()">Submit</button>
+           <p>the result is: <span id="result"></span></p>
+        </div>
+
+     <script src="Calculator.js"></script>
+    </body>
+</html>

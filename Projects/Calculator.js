@@ -5,27 +5,21 @@ let operation = "";
 // if Submit button (in the html code) is pressed, this function is initiated.
 function calculate(){
 // parseInt (camelCase) is used to define a Int variable from a string.
-let x = parseInt(document.getElementById('num1').value)
-let y = parseInt(document.getElementById('num2').value)
-
+let x = Number(document.getElementById('num1').value)
+let y = Number(document.getElementById('num2').value)
+// creates the Result variable. Result is intended to change based on the numbers inputted inside of the code. So we use let.
 let result;
 
-if (operation === '+'){
+if (operation === "+"){
     result = x + y;
-}
-
-else if (operation === '-'){
+}else if (operation === "-"){
     result = x - y;
-}
-
-else if (operation === '*'){
+}else if (operation === "*"){
     result = x * y;
-}
-
-else (operation === '/')
+} else if (operation === "/")
 {
-    result = x/y;
-}
+    result = x / y;
+} 
 
 document.getElementById("result").textContent=result;
 }

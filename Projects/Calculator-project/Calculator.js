@@ -16,8 +16,7 @@ if (operation === "+"){
     result = x - y;
 }else if (operation === "*"){
     result = x * y;
-} else if (operation === "/")
-{
+} else {
     result = x / y;
 } 
 

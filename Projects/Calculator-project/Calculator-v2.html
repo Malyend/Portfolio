@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Roberto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Calculator V2</title>
+
+        <link rel="stylesheet" href="calculate-v2.css" type="text/css">
+        <link rel="icon" href="/Images/pixil-frame-0 (1).png" type="image/x-icon">
+
+    </head>
+    <body>
+        <div class="calculator">
+            <input type="text" id="result" readonly>
+            <div class="keys">
+                <button id="num" onclick="document.getElementById('result').value += 1">1</button>
+                <button onclick="document.getElementById('result').value += 2">2</button>
+                <button onclick="document.getElementById('result').value += 3">3</button>
+                <button class="operations" onclick="document.append('+')">+</button>
+
+                <br>
+                <button onclick="document.append('4')">4</button>
+                <button onclick="document.append('5')">5</button>
+                <button onclick="document.append('6')">6</button>
+                <button class="operations" onclick="document.append('-')">-</button>
+                
+                <br>
+                <button onclick="document.append('7')">7</button>
+                <button onclick="document.append('8')">8</button>
+                <button onclick="document.append('9')">9</button>
+                <button class="operations" onclick="document.append('÷')">&divide;</button>
+
+                <br>
+                <button onclick="document.getElementById('result') ='' ">CLR</button>
+                <button onclick="document.append('0')">0</button>
+                <button class="submit" onclick="document.append('submit')">=</button>
+            </div>
+        </div>
+
+            <!--Delete the text here after border is created.-->
+        </form>
+        </div>
+
+        <script src="/Projects/Calculator-project/calculator-v2.js"></script>
+    </body>
+</html>

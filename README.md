@@ -17,3 +17,7 @@ been a few months since i made this. I need to redo it.
 
 Thanks for reading
 byeeeeeeee
+
+-*-HEY-*-
+Roberto from the 22nd of May here, 
+I believe it's time to start building this portfolio from the ground up.

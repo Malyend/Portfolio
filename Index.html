@@ -1,80 +1,61 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="Description" content="My porfolio">
-        <meta name="Author" content="Roberto">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Keywords" content="Malyend, Roberto Ferreira Teles, Portfolio">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roberto Ferreira Teles">
+    <meta name="description" content="My Portfolio">
+    <meta name="keywords" content="Roberto Ferreira Teles, Portfolio">
+    <meta name="refferer" content="no-refferer">
 
-        <link rel="icon" href="/Images/pixil-frame-0 (1).png" type="X-icon/image">
-        <link rel="Stylesheet" href="Malyend_Portfolio.css">
+    <link rel="stylesheet" href="./Malyend_Portfolio.css" type="text/css">
+    <link rel="stylesheet" href="./fonts/css/all.css" type="text/css">
+    <title>RFT - Portfolio</title>
 
-        <title>Roberto's Portfolio</title>
-    </head>
-    <body>
-        <!--Planning to make this into a short introduction-->
-        <div class="header_cont">
-        <Header>
-            <h1>My portfolio</h1>
-            <p>Hello and welcome, My name is Roberto and welcome to my Portfolio. <br>
-                 This will be changed and updated from time to time. But yeah, i hope you find what you're looking for.
-            </p>
-        </Header>
+    <!-- ALien language font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!--Robotic Futuristic Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="Index-wrapper">
+    <nav class="nav">
+        <h1>Roberto Ferreira Teles</h1>
+    </nav>
+    <header class="header">
+        <div class="head-info">
+        <img src="./Images/IMG_9386.jpeg" alt="Its me!" height="360">
+
+        <p>My name is Roberto and I am an aspiring software developer. <br>
+        I am capable of Full stack development, creating secure, fast and reliable websites that keep you and your data secure. <br>
+        My strengths currently lie in the creation, design and maintenance of websites. <br>
+    Its a pleasure to meet you.</p>
         </div>
 
-        <!-- Planning to add an image of myself, and a little bit about me.
-         Also adding a Button feature to take people to the next page-->
-        <section>
-            <h2 id="M-name">Roberto Ferreira Teles</h2>
+        <h3><strong>Welcome to my website.</strong></h3>
+    </header>
+    <main class="main">
+        <h2>Projects</h2>
+        
+        <div id="project-1-cont">
 
-            <div class="section_info">
-            <img src="/Images/IMG_9386.jpeg" alt="a picture of me" height="360px" loading="eager" ></img>
-            
-            <p>My name is Roberto, I am learning to code.
-                <br>
-                 I aspire to be capable of creating websites without jamming a fork in my eyeballs.
-                 But I keep getting called back to coding. So i think i want to seriously consider it.
-            
-                <br>    
-                <br>
-                 in here, is a page where I keep all my projects. From creating a calculator, to hopefully more.</p>
-            </div>
-            
-            <div class="Button">
-            <button onclick="location.href='/Projects/Projects.html'">Projects</button>
-            <p>Enjoy ^_^</p>
-            </div>
+        </div>
+        <div id="projec-2-cont"></div>
+    </main>
+    <footer class="footer">
+        <h2>Contact Me</h2>
 
-        </section>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
 
-        <!--Contact details, My username, My socials-->
-        <footer class="foot-section">
-            <h3>Contact Me</h3>
-            
-            <div class="foot_form">
-            <form action="/Action_page.php">
-               <label for="fname">First Name</label>
-               <input type="text" id="fname" name="Firstname" placeholder="Your name">
-
-               <label for="Email"> Your Email</label>
-               <input type="email" id="Email" name="Email" placeholder="Your Email">
-
-               <label for="Subject">Contact me</label>
-               <textarea id="Subject" name="Subject" placeholder="Write something..." style="height:200px"> 
-               </textarea>
-
-               <input id="Submit" type="submit" value="send">
-            </form>
-            </div>
-
-            <div class="foot_email">
-            <p>Contact me with my Email</p>
-            <a href="mailto:Malyendf@gmail.com">Malyendf@gmail.com</a>
-
-            &lt;&lt;Malyend&copy;&gt;&gt;
-            </div>
-        </footer>
-        <script src="Portfolio.js"></script>
-    </body>
+        <address><a href="mailto:robertoft.205@gmail.com">Send me an Email</a> </address>
+    </footer>
+    </div>
+</body>
 </html>

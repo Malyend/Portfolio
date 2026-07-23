@@ -2,187 +2,138 @@
 body {
     background-color: black;
     color: whitesmoke;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    word-wrap: break-word;
+    overflow-x: hidden;
+
+    font-family: "Quantico", sans-serif;
 }
 
-h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-    font-size: 2.5rem;
-    text-transform: capitalize;
+/*fonts*/
+.hibur-mono-regular {
+  font-family: "Hibur Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    font-size: 1.6rem;
+/*Futuristic*/ 
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.3rem;
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-/*Header*/
-.header_cont {
-    display: flex;
-     display: flex;
-     flex-direction: column;
-
-    align-items: center;
-    text-align: center;
-
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-/*Section*/
-
-Section h2 {
-    justify-self: center;
-    align-self: center;
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
-.section_info {
-    display: flex;
-}
 
-img {
-   padding: 0 3rem 0 0; 
-}
+/*wrapper*/
+#Index-wrapper {
+    display: grid;
 
-/*The Project Button*/
-.Button {
-      justify-self: center;
-    align-self: center;
-    position: relative;
-
-}
-
-button{ 
-    padding: 1rem 1.3rem;
+    grid-template-areas:
+    'nav'
+    'head'
+    'main'
+    'foot';
     
-    border: none;
-    position: relative;
-    z-index: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3% 1fr 1fr auto;
 }
-
-.Button button::before {
-
-    content: "";
-
-    border: 2px solid transparent;
-    
-    padding: 1.3rem;
-    border-radius: 1rem;
-
-    height: 100%;
+/*Navigation Section */
+.nav {
+    grid-area: nav;
+    background-color: whitesmoke;
     width: 100%;
 
-    position: absolute;
 
-    top: -13px;
-    left: -20px;
-    
-    transition: 2s;
+    color: black;
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    font-weight: 700;
+    font-style: italic;
 }
 
-.Button button::after {
-    content: "";
+/*Header Section*/ 
 
-    position: absolute;
-    border: 2px solid whitesmoke;
-    border-style: double;
-        height: 100%;
-        width: 100%;
-
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        transition: 2s;
-    
+.header {
+    grid-area: head;
+    background-color: rgb(100, 99, 99);
 }
 
-
-.Button button:hover {
-    cursor: pointer;
-    transform: scale(1.5);
-    transition: 1.2s;
-
-    border: 2px solid crimson;
-    border-width: 0.2rem;
-
-    padding: 1.3rem;
-    position: relative;
-
-    top: 0;
-    
-}
-
-/*the footer section*/
-
-.foot-section {
-    display: flex;
-
-    flex-direction: column;
-    background-color: black;
-}
-
-.foot_form form, input {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.foot_form input {
-    background-color: whitesmoke;
-}
-
-.foot_form form, input, label {
-    height: auto;
-}
-
-#Submit {
-    padding: 1rem;
-
-    justify-self: center;
-    align-self: center;
-
-    width: 50%;
-    background-color: whitesmoke;
-
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#Submit:hover {
-    cursor: pointer;
-
-    transform: scale(0.9);
-    transition: 1.2s;
-}
-
-.foot_email {
-    display: flex;
-    flex-direction: column;
-
-    align-self: center;
-    justify-self: center;
-
+.header h3 {
     text-align: center;
-}
-.foot_email a:link {
-    color: aliceblue;
+    font-size: 1.6rem;
+
+    margin: auto;
+    padding: 0.2rem;
+
+    width: 80%;
+
+    background-color: black;
+    border-radius: 2rem 0.2rem;
+
+    color: purple;
+    
 }
 
-.foot_email a:visited {
-    color: darkred;
+.head-info {
+ display: flex;
+ gap: 0.4rem;
+
+ flex-direction: column;
+
+ align-items: center;
+ text-align: center;
 }
 
-.foot_email a:hover {
-    color: blueviolet;
+
+.head-info img{
+    image-rendering: optimizeQuality;
+    border-radius: 2rem;
+
+    padding: 1rem 1rem 0 0rem;
+    height: 360px;
 }
 
-.foot_email a:active {
-    color: cadetblue;
+.head-info img::before {
+    content: "";
+    height: 360px;
+    width: 340px;
+
+
+    background-color: black;
+    z-index: 999;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: foot;
 }
 

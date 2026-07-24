@@ -1,3 +1,13 @@
+/*custom colors*/
+:root {
+    --neon-blue: #2323FF;
+    --Fut-light-blue: #3df2e0;
+    --Fut-grey: #84888c;
+    --Fut-light-grey: #babcbf;
+    --Fut-white: #f8fcff;
+    --Fut-Purple: #602080;
+}
+
 /*Basic*/
 body {
     background-color: black;
@@ -62,7 +72,7 @@ body {
 /*Navigation Section */
 .nav {
     grid-area: nav;
-    background-color: whitesmoke;
+    background-color: var(--Fut-white);
     width: 100%;
 
 
@@ -81,7 +91,7 @@ body {
 
 .header {
     grid-area: head;
-    background-color: rgb(100, 99, 99);
+    background-color: var(--Fut-grey);
 }
 
 .header h3 {
@@ -96,7 +106,7 @@ body {
     background-color: black;
     border-radius: 2rem 0.2rem;
 
-    color: purple;
+    color: var(--Fut-Purple);
     
 }
 
@@ -133,7 +143,54 @@ body {
     grid-area: main;
 }
 
+.main h2 {
+    text-align: center;
+    letter-spacing: 0.4em;
+    line-height: 0.8;
+
+    font-size: 2rem;
+    border-bottom: 2px solid var(--Fut-Purple);
+    border-top: 2px solid var(--Fut-Purple);
+
+    background-color: var(--Fut-light-grey);
+    color: var(--Fut-Purple);
+
+    padding: 0.5rem;
+}
+
 .footer {
     grid-area: foot;
+
+    text-align: center;
+    
+    background-color: var(--Fut-grey);
 }
+
+.footer h2 {
+    font-size: 2rem;
+
+    color: var(--Fut-Purple);
+}
+
+#footer-social {
+    display: flex;
+
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+}
+
+.footer address {
+    padding: 1.5rem;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--Fut-white);
+}
+
+.footer a:hover {
+    cursor: pointer;
+    color: var(--Fut-light-blue);
+}
+
 
